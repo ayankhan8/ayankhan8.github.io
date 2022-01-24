@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+.c
+{
+	text-align : center;
+	color : black ;
+	font-size : 25px;
+}
+
+
+
+
+
+</style>
+
+
+
+<script>
+var counter = 3; 
+
+
+function authenticate(){
+if (counter==0)
+{
+	alert("you have exceeded your attempts for the day");
+}
+else{
+	if (document.myform.n1.value == "abc" && document.myform.n2.value == "123")
+		{
+			alert("successful login");
+			window.location.href = "2_faculty.html";
+			
+			
+		}
+	else{
+			counter--;
+			document.myform.result.value = counter;
+			alert("Incorrect Username or password");
+	}
+	}
+
+}</script>
+</head>
+
+
+<body style = "background-image: url('https://tse1.mm.bing.net/th?id=OIP.kBNqyJvMZVDeWR99s6fYfQHaEK&pid=Api&P=0&w=288&h=163'); background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;">
+<div class = "c"><h1 > FACULTY LOGIN </h1><br>
+
+
+<!--<a href="shopping.html"> Click to Start Shopping</a>-->
+
+<form name = "myform">
+<label for = "usr">ENTER USER NAME</label><br>
+<input type = "text" id = "usr" name = "n1"><br>
+<label for = "pass">ENTER PASSWORD</label><br>
+<input type = "text" id = "pas" name = "n2"><br>
+<br>
+<br>
+<input type = "button" onclick = "authenticate()" name="sub" value="login" style ="font-size : 25px">
+<input id ="result" type = "text" style = "font-size: 25px" name = "result">
+</form>
+
+
+
+
+</body>
+
+</html>

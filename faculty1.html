@@ -1,0 +1,135 @@
+<html>
+<head>
+<style>
+.c
+{
+	
+	text-align:center;
+	font-size : 50px;
+	color : black;
+
+
+
+}
+
+
+</style>
+
+
+
+<SCRIPT>
+var a = "NaN";
+var b = "NaN";
+var c = "NaN";
+var d = "NaN";
+var e = "NaN";
+var f = "NaN";
+var g = "NaN";
+var h = "NaN";
+var i = "NaN";
+var j = "NaN";
+
+function validate()
+{	
+	if(document.getElementById("st1").checked)
+	{
+		a = document.getElementById("stu1").innerHTML;
+		sessionStorage.setItem("disp_s1",a);
+	}
+
+	if(document.getElementById("st2").checked)
+	{
+		b = document.getElementById("stu2").innerHTML;
+		sessionStorage.setItem("disp_s2",b);
+	}
+	if(document.getElementById("st3").checked)
+	{
+		c = document.getElementById("stu3").innerHTML;
+		sessionStorage.setItem("disp_s3",c);
+	}	
+	if(document.getElementById("st4").checked)
+	{
+		d = document.getElementById("stu4").innerHTML;
+		sessionStorage.setItem("disp_s4",d);
+	}
+
+	if(document.getElementById("st5").checked)
+	{
+		e = document.getElementById("stu5").innerHTML;
+		sessionStorage.setItem("disp_s5",e);
+	}
+	if(document.getElementById("st6").checked)
+	{
+		f = document.getElementById("stu6").innerHTML;
+		sessionStorage.setItem("disp_s6",f);
+	}	
+	
+	if(document.getElementById("st7").checked)
+	{
+		g = document.getElementById("stu7").innerHTML;
+		sessionStorage.setItem("disp_s7",g);
+	}	
+	if(document.getElementById("st8").checked)
+	{
+		h = document.getElementById("stu8").innerHTML;
+		sessionStorage.setItem("disp_s8",h);
+	}
+
+	if(document.getElementById("st9").checked)
+	{
+		i = document.getElementById("stu9").innerHTML;
+		sessionStorage.setItem("disp_s9",i);
+	}
+	if(document.getElementById("st10").checked)
+	{
+		j = document.getElementById("stu10").innerHTML;
+		sessionStorage.setItem("disp_s10",j);
+	}	
+	
+	window.open("display.html");
+}
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body style = "background-image: url(https://tse3.mm.bing.net/th?id=OIP.b9ibSZL9OnMqzO6i_7LelwHaEK&pid=Api&P=0&w=310&h=175); background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;">
+<h1 class = "c">STUDENTS OF FACULTY 1<h1>
+
+<form name="m" id="f_id" style = "text-align:center">
+<label id="stu1" for="s1">student 1</label>
+<input type="checkbox" id="st1" name="1_student"><br>
+<label id="stu2" for="s2">student 2</label>
+<input type="checkbox" id="st2" name="2_student"><br>
+<label id="stu3" for="s3">student 3</label>
+<input type="checkbox" id="st3" name="3_student"><br>
+<label id="stu4" for="s4">student 4</label>
+<input type="checkbox" id="st4" name="4_student"><br>
+<label id="stu5" for="s5">student 5</label>
+<input type="checkbox" id="st5" name="5_student"><br>
+<label id="stu6" for="s6">student 6</label>
+<input type="checkbox" id="st6" name="6_student"><br>
+<label id="stu7" for="s7">student 7</label>
+<input type="checkbox" id="st7" name="7_student"><br>
+<label id="stu8" for="s8">student 8</label>
+<input type="checkbox" id="st8" name="8_student"><br>
+<label id="stu9" for="s9">student 9</label>
+<input type="checkbox" id="st9" name="9_student"><br>
+<label id="stu10" for="s10">student 10</label>
+<input type="checkbox" id="st10" name="10_student"><br>
+<br>
+<br>
+<br>
+<input type="button" value="SUBMIT" name="SUBMIT" id="out_check" onclick="validate()" style ="font-size : 25px ; text-align: center;padding :30px">
+</form>
+</body>
+</html>
